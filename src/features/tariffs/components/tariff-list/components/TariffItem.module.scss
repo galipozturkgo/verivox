@@ -1,0 +1,32 @@
+@use '@verivox/styles/mixins' as *;
+
+$border: 0.0625rem solid black;
+
+.tariffItem {
+  display: flex;
+  height: 8rem;
+  align-items: center;
+  border: $border;
+}
+
+.tariffOrder {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.5rem;
+  border-right: $border;
+}
+
+.tariffContent {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  column-gap: 1rem;
+}
+
+@include tablet {
+  .tariffItem {
+    height: 10rem;
+  }
+}

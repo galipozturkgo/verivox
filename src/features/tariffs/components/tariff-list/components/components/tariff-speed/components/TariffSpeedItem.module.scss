@@ -1,0 +1,49 @@
+@use '@verivox/styles/mixins' as *;
+
+.tariffSpeedItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.tariffSpeedItemLabel {
+  display: none;
+}
+
+.tariffSpeedContainer {
+  display: flex;
+  height: 2rem;
+  width: 8rem;
+}
+
+.tariffSpeedBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tariffSpeedDivider {
+  border-right: none !important;
+  display: none;
+}
+
+@include tablet {
+  .tariffSpeedItemLabel {
+    display: block;
+  }
+
+  .tariffSpeedDivider {
+    display: flex;
+  }
+
+  .tariffSpeedContainer {
+    width: 16rem;
+  }
+}
+
+@include desktop {
+  .tariffSpeedContainer {
+    width: 24rem;
+  }
+}

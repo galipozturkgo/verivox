@@ -1,0 +1,11 @@
+.tariffFilter {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.tariffFilterInput {
+  display: flex;
+  column-gap: 0.5rem;
+}

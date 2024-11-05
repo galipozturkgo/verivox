@@ -1,0 +1,28 @@
+@use '@verivox/styles/mixins' as *;
+
+.tariffBenefits {
+  display: none;
+  list-style-type: disc;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+@include desktop {
+  .tariffBenefits {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+@use '@verivox/styles/mixins' as *;
+
+.tariffSpeed {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  font-size: 0.825rem;
+}
+
+@function border($color) {
+  @return 0.0625rem solid $color;
+}
+
+@mixin apply-border($color) {
+  border: border($color);
+}
+
+.tariffSpeedDownload {
+  @include apply-border(green);
+}
+
+.tariffSpeedUpload {
+  @include apply-border(blue);
+}

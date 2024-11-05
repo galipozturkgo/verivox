@@ -1,0 +1,14 @@
+@use '@verivox/styles/mixins' as *;
+
+.tariffName {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@include tablet {
+  .tariffName {
+    align-items: start;
+  }
+}

@@ -20,8 +20,13 @@
     "src/**/*.test.jsx",
     "vite.config.ts",
     "vite.config.mts",
-    "vitest.config.ts",
-    "vitest.config.mts"
+    "jest.config.ts"
   ],
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"]
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "jest.setup.ts"
+  ]
 }

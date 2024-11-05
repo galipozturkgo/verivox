@@ -1,0 +1,28 @@
+@use '@verivox/styles/mixins' as *;
+
+.tariffs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+.tariffsHeader {
+  display: flex;
+}
+
+.tariffsHeaderItems {
+  width: 100%;
+  display: flex;
+  column-gap: 1rem;
+}
+
+@include tablet {
+  .tariffsHeader {
+    justify-content: end;
+  }
+
+  .tariffsHeaderItems {
+    max-width: 36rem;
+  }
+}

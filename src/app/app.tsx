@@ -1,14 +1,8 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-
-import NxWelcome from './nx-welcome';
+import './App.module.scss';
+import Tariffs from '../features/tariffs/Tariffs';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="verivox" />
-    </div>
-  );
+  return <Tariffs />;
 }
 
 export default App;
