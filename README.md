@@ -9,17 +9,17 @@
 
 ## Installation
 
-````bash
+``bash
 npm install
 
 ## Running the Application
 
-```bash
+``bash
 nx serve
 
 ## Testing
 
-```bash
+``bash
 nx test
 
 # Important Notes
